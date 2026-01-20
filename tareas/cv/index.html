@@ -1,0 +1,159 @@
+<!--Este documento es una práctica y anotaciones del curso de HTML de midudev-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#09f"> <!--para poneler color a la parte del buscador-->
+    <link rel="icon" type="image/jpg" href="./images/yo.jpg"> <!--para agregar un icono al lado del titulo-->
+    
+    <!--OPEN GRAPH-->
+    <!--para que de vea bien el contenido en las redes sociales-->
+
+    <meta name="description" content="Portafolio web de una estudiante de Ingenieria en Informática"> <!--sirve para que aparezca una descripcion en el buscador-->
+    <link rel="alternative" href="---"> <!--es para poner una alternativa a la pagina, por ejemplo si esta disponible en varios idiomas-->
+    
+    <title>My resume</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>My Resume</h1>
+        <h2>Aylen Wyder</h2>
+        <p><strong>Computer Science Student</strong></p>
+
+        <nav>
+            <a href="#my-education">My Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#about-me">About me</a>
+        </nav>
+
+    </header>
+
+    <hr/>
+    <main>
+        <section>
+            <h3 id="my-education">Education</h3>
+            <ul>
+                <li>High School: Bachillerato Cientifico con enfasis en ciencias sociales</li>
+                <li>University: Currently in my seventh semester</li>
+                <li>Diplomas and Workshops:
+                    <ul>
+                    <li>Full Stack Bootcamp</li> 
+                    <li>Front End Workshop</li>
+                    <li>Soft Skills Workshop</li>
+                    <li>English course</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <br>
+        <section>
+            <h3 id="skills">Skills</h3>
+            <ul>
+                <li>Front-End: html, css, javascript</li>
+                <li>Back-End: python, django, postgreSQL</li>
+                <li>C</li>
+                <li>Java</li>
+                <li>Figma</li>
+            </ul>
+        </section>
+        <br>
+        <section>
+            <h3 id="about-me">About me</h3>
+            <ul>
+                <li>Really pasionate about learning new things</li>
+                <li>I own a small business where I make digital invitations: <a target="_blank" rel="noreferrer" href="https://www.instagram.com/fannstudio.py/">fannStudio</a></li>
+                <li>I like sewing, I usually sell scrunchies: <a target="_blank" rel="noreferrer" href="https://www.instagram.com/pespunte_py/">pespunte_py</a></li>
+            </ul>
+            <video controls muted autoplay loop height="400" src="https://www.pexels.com/download/video/29525405/">I really like bird watching</video>
+            <!--este tag iframe es especificamente para poner un video de youtube-->
+           <!--iframe permite incrustar una parte de otra pagina web-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/u7kdVe8q5zs?si=KHXDs2a4Fbm3S7Xg"
+            title="YouTube video player" 
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+
+        <section>
+            <h3>Preguntas frecuentes</h3>
+            <details>
+                <summary>Qué estudios tienes?</summary>
+                <p>Estoy estudiando en la Universidad Nacional de Asunción, Facultad Politécnica</p>
+            </details>
+        </section>
+
+        <section>
+            <h3>Formulario de contacto</h3>
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <div>
+                        <label for="name">Nombre:</label>
+                        <input type="email" id="name" name="name" placeholder="Aylén Wyder" required>
+                    </div>
+                  
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="aylen14wyder@gmail.com" required>
+                    </div>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Información adicional</legend>
+                    <div>
+                        <label>Celular:</label> 
+                        <input id="cel" required name="phone" type="tel" pattern="[0-9]{4}-[0-9]{4}" placeholder="0981123456">                    
+                    </div>
+                </fieldset>   
+                <fieldset>
+                    <legend>Otros</legend>
+
+                    <div>
+                        <label for="why">Por qué me quieres contactar?</label>
+                        <br>
+                        <select name="why" id="why">
+                            <option value="1">Trabajo</option>
+                            <option value="2">Duda</option>
+                            <option value="3">Más información</option>
+                        </select>
+                    </div>
+
+                </fieldset>
+                <div>
+                    <label for="terminos">Aceptas los términos y condiciones?</label>
+                    <input type="checkbox" id="terminos" name="terms">
+                </div>
+
+                <div>
+                    <datalist>
+                        <option value="JavaScript"></option>
+                        <option value="Python"></option>
+                        <option value="Java"></option>
+                        <option value="C"></option>
+                    </datalist>
+                    <label for="lan">Con qué lenguaje quieres que te ayude?</label>
+                    <input list="languages" name="languages" id="lan">
+                </div>
+                <button type="submit">Enviar contacto</button>
+                <!--<input type="submit" value="Enviar contacto">-->
+            </form>
+        </section>
+
+    </main>
+    <hr>
+    <footer> 
+        <h4>Contact me</h4>
+        <ul>
+            <li><a href="mailto:aylen14wyder@gmailcom" rel="noreferrer" target="_blank">aylen14wyder@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/aylen-wyder-a103b8242/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
+
+<!-- 
+<input type= "color" > 
+-->
