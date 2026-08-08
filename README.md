@@ -1,2 +1,2 @@
 # bootcamp-fullstack
-Este repositorio almacena las tareas y prácticas del Bootcamp: Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps
+Este repositorio almacena las tareas y prácticas del Bootcamp: Full-Stack Web Developer. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps
